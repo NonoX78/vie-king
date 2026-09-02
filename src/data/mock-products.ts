@@ -1,0 +1,106 @@
+import { Product } from "@/lib/types";
+
+// This catalogue renders whenever Supabase env vars are absent, so the site
+// is fully browsable out of the box. Once Supabase is connected, real
+// products managed from /admin take over automatically.
+export const MOCK_PRODUCTS: Product[] = [
+  {
+    id: "1",
+    slug: "le-sacre",
+    name: "Le Sacre",
+    colorway: "Warm Ivory / Gold Thread",
+    edition: "Edition No. 001",
+    material: "Brushed cotton canvas, hand-stitched crest",
+    price_cents: 12000,
+    description: "The coronation piece. Where the collection begins.",
+    story:
+      "Named for the ceremony of crowning, Le Sacre carries a single gold thread across the brow — a quiet mark of rank for those who know what to look for.",
+    image_url: "https://picsum.photos/seed/vieking-le-sacre/1200/1500",
+    gallery: [
+      "https://picsum.photos/seed/vieking-le-sacre-2/1200/1500",
+      "https://picsum.photos/seed/vieking-le-sacre-3/1200/1500",
+    ],
+    stock: 24,
+    is_active: true,
+  },
+  {
+    id: "2",
+    slug: "noir-regence",
+    name: "Noir Régence",
+    colorway: "Deep Black",
+    edition: "Edition No. 002",
+    material: "Heavyweight wool blend, matte hardware",
+    price_cents: 13000,
+    description: "Authority, without a raised voice.",
+    story:
+      "Noir Régence is cut for the room you walk into last. Dense, matte wool absorbs light instead of catching it — presence over shine.",
+    image_url: "https://picsum.photos/seed/vieking-noir/1200/1500",
+    gallery: ["https://picsum.photos/seed/vieking-noir-2/1200/1500"],
+    stock: 31,
+    is_active: true,
+  },
+  {
+    id: "3",
+    slug: "argile",
+    name: "Argile",
+    colorway: "Terracotta Clay",
+    edition: "Edition No. 003",
+    material: "Washed cotton twill, raw-edge brim",
+    price_cents: 11500,
+    description: "Earth, worn like an heirloom.",
+    story:
+      "Argile takes its color from Martinique's own soil — a warm clay that softens with every wear, aging the way good leather does.",
+    image_url: "https://picsum.photos/seed/vieking-argile/1200/1500",
+    gallery: ["https://picsum.photos/seed/vieking-argile-2/1200/1500"],
+    stock: 18,
+    is_active: true,
+  },
+  {
+    id: "4",
+    slug: "or-brut",
+    name: "Or Brut",
+    colorway: "Sand / Raw Gold",
+    edition: "Edition No. 004 — Limited",
+    material: "Suede crown panel, brushed gold eyelets",
+    price_cents: 16000,
+    description: "Gold, unpolished on purpose.",
+    story:
+      "Or Brut pairs soft suede with hardware left deliberately unpolished — the imperfection is the point. Nothing about a real crown is mass-produced.",
+    image_url: "https://picsum.photos/seed/vieking-orbrut/1200/1500",
+    gallery: ["https://picsum.photos/seed/vieking-orbrut-2/1200/1500"],
+    stock: 9,
+    is_active: true,
+  },
+  {
+    id: "5",
+    slug: "ivoire-muse",
+    name: "Ivoire Muse",
+    colorway: "Warm Ivory",
+    edition: "Edition No. 005",
+    material: "Fine cotton poplin, tonal embroidery",
+    price_cents: 11000,
+    description: "For the ones still deciding who they're becoming.",
+    story:
+      "Ivoire Muse is the lightest piece in the collection — a study in restraint, made for the days confidence needs to be quiet.",
+    image_url: "https://picsum.photos/seed/vieking-ivoire/1200/1500",
+    gallery: ["https://picsum.photos/seed/vieking-ivoire-2/1200/1500"],
+    stock: 27,
+    is_active: true,
+  },
+  {
+    id: "6",
+    slug: "sable-royal",
+    name: "Sable Royal",
+    colorway: "Sand",
+    edition: "Edition No. 006",
+    material: "Cotton canvas, leather strap-back",
+    price_cents: 12500,
+    description: "The everyday crown.",
+    story:
+      "Sable Royal was built for repetition — the piece you reach for without thinking, until one day you notice you never take it off.",
+    image_url: "https://picsum.photos/seed/vieking-sable/1200/1500",
+    gallery: ["https://picsum.photos/seed/vieking-sable-2/1200/1500"],
+    stock: 40,
+    is_active: true,
+  },
+];
