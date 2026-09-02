@@ -37,7 +37,7 @@ export function ProductImage({
     <div
       className={`absolute inset-0 flex flex-col items-center justify-center gap-3 ${className}`}
       style={{
-        background: `linear-gradient(150deg, ${product.accent_color} 0%, #FFFDF9 130%)`,
+        background: `linear-gradient(150deg, ${product.accent_color ?? "#D8CFC4"} 0%, #FFFDF9 130%)`,
       }}
     >
       <CapSilhouette color="#14110F" opacity={0.14} />

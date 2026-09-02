@@ -3,12 +3,13 @@ export type Product = {
   slug: string;
   name: string;
   colorway: string;
-  edition: string; // e.g. "Edition No. 004"
+  edition: string;
   material: string;
   price_cents: number;
   description: string;
   story: string;
   image_url: string;
+  accent_color?: string;
   gallery: string[];
   stock: number;
   is_active: boolean;
@@ -32,7 +33,12 @@ export type CustomerInfo = {
 export type Order = {
   id?: string;
   customer: CustomerInfo;
-  lines: { product_id: string; name: string; quantity: number; price_cents: number }[];
+  lines: {
+    product_id: string;
+    name: string;
+    quantity: number;
+    price_cents: number;
+  }[];
   total_cents: number;
   status: "pending" | "paid" | "fulfilled" | "cancelled";
   payment_provider: "sumup";
